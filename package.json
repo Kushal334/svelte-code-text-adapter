@@ -1,0 +1,23 @@
+{
+  "name": "todoist",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "format": "prettier --write --plugin-search-dir=. ./**/*.svelte"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "next",
+    "@types/uuid": "^8.3.0",
+    "prettier": "^2.2.1",
+    "prettier-plugin-svelte": "^2.2.0",
+    "svelte": "^3.37.0",
+    "svelte-preprocess": "^4.7.0",
+    "typescript": "^4.2.3",
+    "vite": "^2.1.5"
+  },
+  "dependencies": {
+    "@lukeed/uuid": "^2.0.0"
+  }
+}

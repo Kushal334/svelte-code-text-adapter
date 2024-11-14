@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: white;
+  --primary600: #f3f6ff;
+  --secondary: #495068;
+  --secondary300: #9ba7ca;
+  --secondary100: #9ba7ca60;
+  --success: #b0e425;
+  --accent: #a34af4;
+  --danger: #ff3e9b;
+  --info: #3ecdff;
+
+  --font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --box-shadow: rgba(0, 0, 0, 0.03) 0px 10px 12px;
+  --transition: 0.2s cubic-bezier(0.33, 0.68, 0.37, 0.97) all;
+  --border-radius: 20px;
+  --border-radius-small: 7px;
+}
+
+body {
+  font-family: var(--font-family);
+  background: var(--primary600);
+  color: var(--secondary);
+  text-rendering: optimizeLegibility;
+  font-smooth: antialiased;
+}
+
+main {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  padding: 2rem;
+}
+
+@media (min-width: 800px) {
+  main {
+    padding: 2rem 5rem;
+    max-width: 65vw;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  font-family: var(--font-family);
+  padding: 0.25rem 1rem;
+  background: var(--primary);
+  align-self: flex-end;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--border-radius-small);
+  color: var(--secondary);
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 17px 12px;
+}
+
+button.danger {
+  color: white;
+  background: var(--danger);
+  border: none;
+}
+
+button.icon {
+  height: 1.65rem;
+  width: 1.65rem;
+  padding: 0;
+  font-weight: 500;
+  font-size: 0.7rem;
+}
+
+input,
+textarea {
+  padding: 0.25rem 0.5rem;
+  font-family: var(--font-family);
+  border: 1px solid var(--secondary100);
+  border-radius: var(--border-radius-small);
+  color: var(--secondary);
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: var(--font-family);
+  color: var(--secondary300);
+}
