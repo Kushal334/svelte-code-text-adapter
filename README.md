@@ -1,0 +1,1 @@
+# svelte-code-text-adapter
